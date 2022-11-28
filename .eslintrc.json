@@ -4,7 +4,6 @@
     "es2021": true
   },
   "extends": [
-    "plugin:react/recommended",
     "standard-with-typescript"
   ],
   "overrides": [],
@@ -15,14 +14,14 @@
     "project": ["tsconfig.json"]
   },
   "plugins": [
-    "@typescript-eslint",
-    "react"
+    "@typescript-eslint"
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/triple-slash-reference": "off",
-    "indent": ["error", 2],
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2],
     "max-len": ["error", { "code": 120 }],
     "@typescript-eslint/no-dynamic-delete": "off"
   }
